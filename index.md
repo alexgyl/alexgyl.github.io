@@ -35,10 +35,6 @@ library(ISLR);data(Default);head(Default)
 ```
 
 ```
-## Warning: package 'ISLR' was built under R version 3.2.5
-```
-
-```
 ##   default student   balance    income
 ## 1      No      No  729.5265 44361.625
 ## 2      No     Yes  817.1804 12106.135
@@ -66,14 +62,6 @@ hist(Default$income, breaks = 30, col = 'blue', border = 'white',
 ## Model
 
 The modeling technique used for this app is a simple logistic regression model. It is run by the "glm" method in the caret package. The user is allowed to choose the training data set size as well as the variables used. The output of the model will be the confusion matrix and model metrics.
-
-```
-## Warning: package 'caret' was built under R version 3.2.5
-```
-
-```
-## Warning: package 'ggplot2' was built under R version 3.2.5
-```
 
 ```
 ##          Sensitivity          Specificity       Pos Pred Value 

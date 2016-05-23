@@ -29,7 +29,7 @@ Click on the following link to access the app: https://legoh.shinyapps.io/myapp/
 ## Data 
 
 The data set used in this application is given as follows:
-```{r}
+```{r,warning=FALSE}
 library(ISLR);data(Default);head(Default)
 ```
 
@@ -48,7 +48,7 @@ hist(Default$income, breaks = 30, col = 'blue', border = 'white',
 ## Model
 
 The modeling technique used for this app is a simple logistic regression model. It is run by the "glm" method in the caret package. The user is allowed to choose the training data set size as well as the variables used. The output of the model will be the confusion matrix and model metrics.
-```{r, message=FALSE, echo=FALSE}
+```{r, message = FALSE, echo=FALSE, warning=FALSE}
 library(caret)
 set.seed(1234)
 trainIn = createDataPartition(Default$default, p = 0.6, list = FALSE) 
